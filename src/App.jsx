@@ -95,7 +95,11 @@ By following these principles, you'll maintain clean and efficient state managem
 									key={td.id}
 									className="w-full"
 								>
-									<Todo todoInfo={td} />
+									<Todo
+										message={td.msg}
+										id={td.id}
+										completed={td.completed}
+									/>
 								</div>
 							);
 						})}

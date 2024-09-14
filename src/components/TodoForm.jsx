@@ -28,7 +28,6 @@ function TodoForm() {
 				variant="outlined"
 				value={todoMsg}
 				onChange={(e) => setTodoMsg(e.currentTarget.value)}
-				defaultValue={todoMsg}
 				inputRef={textFieldRef}
 				sx={{
 					width: "100%",
@@ -59,7 +58,7 @@ function TodoForm() {
 				}}
 			/>
 			{/* <button className="bg-white text-black border-black border-2 rounded-lg px-3 py-2 font-semibold text-lg hover:border-white hover:bg-black hover:text-white duration-200" onClick={handleAdd}>
-          Add
+			Add
         </button> */}
 			<Button
 				variant="contained"
